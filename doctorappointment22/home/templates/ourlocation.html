@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Locations | MyClinic Hospital</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1583912268184-2b3d9e8b71b4?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    .hero-content { position: relative; z-index: 2; }
+    .hero h1 { font-size: 48px; font-weight: 700; }
+
+    /* Location Cards */
+    .location-card {
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+    .location-card:hover {
+      transform: translateY(-5px);
+    }
+    .location-card img {
+      height: 220px;
+      width: 100%;
+      object-fit: cover;
+    }
+    .location-card .card-body {
+      padding: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔹 Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand text-primary fw-bold fs-3" href="index.html">MyClinic</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link " href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/aboutus/">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="/services/">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/ourlocation/">Our Locations</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
+        </ul>
+        <a href="/booking/" class="btn btn-primary rounded-pill ms-3 px-4">Book Appointment</a>
+        <a href="/login/" class="btn btn-secondary rounded-pill ms-3 px-4">login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🔹 Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Our Locations</h1>
+      <p class="lead">Find a MyClinic branch near you — accessible, modern, and ready to serve you with care.</p>
+    </div>
+  </section>
+
+  <!-- 🔹 Locations Section -->
+  <section class="container py-5">
+    <div class="text-center mb-5">
+      <h2 class="text-primary fw-bold">Visit Our Clinics</h2>
+      <p class="text-muted">We are expanding across the country to provide quality healthcare wherever you are.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Location 1 -->
+      <div class="col-md-4">
+        <div class="card location-card">
+          <img src="https://t4.ftcdn.net/jpg/02/81/42/77/360_F_281427785_gfahY8bX4VYCGo6jlfO8St38wS9cJQop.jpg" alt="New York Clinic">
+          <div class="card-body">
+            <h5 class="card-title text-primary">New York Branch</h5>
+            <p class="card-text">33069 Broadway St, New York, USA</p>
+            <p class="small mb-2">📞 +1 333 666 999 | ✉️ ny@myclinic.com</p>
+            <p class="small text-muted">Open: Monday – Saturday, 9AM – 6PM</p>
+            <iframe src="https://www.google.com/maps?q=New+York,+USA&output=embed" width="100%" height="200" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Location 2 -->
+      <div class="col-md-4">
+        <div class="card location-card">
+          <img src="https://media.istockphoto.com/id/1778918997/photo/background-of-a-large-group-of-assorted-capsules-pills-and-blisters.jpg?s=612x612&w=0&k=20&c=G6aeWKN1kHyaTxiNdToVW8_xGY0hcenWYIjjG_xwF_Q=" alt="Los Angeles Clinic">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Los Angeles Branch</h5>
+            <p class="card-text">2020 Sunset Blvd, Los Angeles, USA</p>
+            <p class="small mb-2">📞 +1 555 888 777 | ✉️ la@myclinic.com</p>
+            <p class="small text-muted">Open: Monday – Saturday, 9AM – 6PM</p>
+            <iframe src="https://www.google.com/maps?q=Los+Angeles,+USA&output=embed" width="100%" height="200" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Location 3 -->
+      <div class="col-md-4">
+        <div class="card location-card">
+          <img src="https://www.pharmacytomydoor.co.uk/wp-content/uploads/2022/03/Is-it-Okay-to-Put-Medicine-in-a-Pill-Box-1024x512.jpg" alt="Chicago Clinic">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Chicago Branch</h5>
+            <p class="card-text">240 Main Street, Chicago, USA</p>
+            <p class="small mb-2">📞 +1 222 555 444 | ✉️ chicago@myclinic.com</p>
+            <p class="small text-muted">Open: Monday – Saturday, 9AM – 6PM</p>
+            <iframe src="https://www.google.com/maps?q=Chicago,+USA&output=embed" width="100%" height="200" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 Footer -->
+  <footer>
+    <p class="mb-0">&copy; 2025 MyClinic Hospital. All Rights Reserved.</p>
+    <small>Providing accessible healthcare, one location at a time.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

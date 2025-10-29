@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | MyClinic Hospital</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Hero Section */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1588776814546-8854f23f2381?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    /* About Section */
+    .about-section {
+      padding: 70px 0;
+    }
+    .about-section h2 {
+      color: #0d6efd;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .about-section p {
+      font-size: 17px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    /* Doctors Section */
+    .doctors {
+      background-color: #f8f9fa;
+      padding: 70px 0;
+    }
+    .doctor-card {
+      background: #fff;
+      border: none;
+      border-radius: 12px;
+      text-align: center;
+      padding: 20px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .doctor-card:hover {
+      transform: translateY(-5px);
+    }
+    .doctor-card img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .doctor-card h5 {
+      color: #0d6efd;
+      font-weight: 600;
+    }
+    .doctor-card p {
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    /* Footer */
+    footer {
+      background: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔹 Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand text-primary fw-bold fs-3" href="index.html">MyClinic</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="/aboutus/">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="/services/">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="/ourlocation/">Our Locations</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
+        </ul>
+        <a href="/booking/" class="btn btn-primary rounded-pill ms-3 px-4">Book Appointment</a>
+        <a href="/login/" class="btn btn-secondary rounded-pill ms-3 px-4">login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🔹 Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>About Our Hospital</h1>
+      <p class="lead">Delivering compassionate care and medical excellence for over a decade.</p>
+    </div>
+  </section>
+
+  <!-- 🔹 About Section -->
+  <section class="about-section container">
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?auto=format&fit=crop&w=900&q=80" alt="Hospital" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <h2>Who We Are</h2>
+        <p>At <strong>MyClinic Hospital</strong>, we are committed to providing high-quality healthcare with a human touch. 
+        For over 10 years, our dedicated team of doctors, nurses, and specialists has been serving patients with compassion and professionalism.</p>
+        <p>We offer a wide range of medical services, state-of-the-art facilities, and a friendly environment 
+        that ensures comfort and confidence during your treatment journey.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 Doctors Section -->
+  <section class="doctors">
+    <div class="container text-center">
+      <h2 class="text-primary mb-5">Meet Our Doctors</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="doctor-card">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dr. John Carter">
+            <h5>Dr. John Carter</h5>
+            <p>Cardiologist</p>
+            <small>Heart specialist with 15+ years of experience in cardiac surgery and treatment.</small>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="doctor-card">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dr. Lisa Raymond">
+            <h5>Dr. Lisa Raymond</h5>
+            <p>Dermatologist</p>
+            <small>Expert in skin, hair, and nail care, committed to helping patients achieve healthy skin.</small>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="doctor-card">
+            <img src="https://randomuser.me/api/portraits/men/64.jpg" alt="Dr. Michael Smith">
+            <h5>Dr. Michael Smith</h5>
+            <p>Orthopedic Surgeon</p>
+            <small>Specialized in joint replacement and bone injury recovery using advanced techniques.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 Footer -->
+  <footer>
+    <p class="mb-0">&copy; 2025 MyClinic Hospital. All Rights Reserved.</p>
+    <small>Committed to providing the best healthcare with compassion and care.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
